@@ -17,6 +17,7 @@ function Kicker({ n, children }: { n: string; children: string }) {
 /* ---------------- Hero ---------------- */
 export function Hero() {
   const { t, lang } = useLang()
+  const pdfOk = usePdfAvailable(paper.pdfPath)
   return (
     <section className="hero" id="top" aria-labelledby="hero-title">
       <div className="hero__grid" aria-hidden="true" />
@@ -43,6 +44,13 @@ export function Hero() {
           <span className="hero__author">{lang === 'he' ? paper.authorHe : paper.authorEn}</span>
           <span className="hero__date">{lang === 'he' ? paper.dateHe : paper.dateEn}</span>
         </div>
+        {pdfOk !== false && (
+          <a className="hero__paper" href={paper.pdfPath} target="_blank" rel="noopener" type="application/pdf">
+            <FileText size={15} aria-hidden="true" />
+            <span>{t.hero.paper}</span>
+            <ArrowUpRight size={15} aria-hidden="true" className="hero__paperarrow" />
+          </a>
+        )}
       </div>
       <a href="#stat" className="hero__scroll">
         <span>{t.hero.scroll}</span>

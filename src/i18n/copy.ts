@@ -24,6 +24,7 @@ const en = {
       'Did Israel’s expansion of advanced mathematics translate into greater STEM participation, and did it help close socioeconomic gaps?',
     by: 'Research by',
     scroll: 'Scroll to read the story',
+    paper: 'Read the paper (PDF)',
   },
   stat: {
     lead: 'of students who passed',
@@ -243,6 +244,7 @@ const he: Copy = {
       'האם הרחבת לימודי המתמטיקה המתקדמת בישראל הובילה ליותר סטודנטים במקצועות STEM, והאם היא סייעה לצמצם פערים חברתיים-כלכליים?',
     by: 'מחקר מאת',
     scroll: 'גללו לסיפור המלא',
+    paper: 'לקריאת המחקר (PDF)',
   },
   stat: {
     lead: 'מבוגרי',
